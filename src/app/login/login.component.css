@@ -1,0 +1,191 @@
+.login-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.login-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-content .login-image {
+  width: 100%;
+  height: auto;
+}
+
+.login-content .login-content-rt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-content .login-content-rt .login-box {
+  width: 100%;
+  max-width: 480px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+  .login-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .login-content .login-image {
+    display: none;
+  }
+
+  .login-content .login-content-rt {
+    width: 100%;
+    height: auto;
+  }
+
+  .login-content .login-content-rt .login-box {
+    margin: 10px;
+  }
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 48px;
+}
+
+.logo-wrapper img {
+  margin-right: 7px;
+}
+
+.logo-wrapper span {
+  color: #e23e3f;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.login-head {
+  margin-top: 0;
+  margin-bottom: 22px;
+  color: #000;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.login-text {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.control-label {
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.form-control {
+  border: 1px solid #c9c9c9;
+  height: 57px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  padding: 6px 12px 6px 24px;
+}
+
+.input-addon {
+  position: relative;
+}
+
+.input-addon .icon-after {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 20px;
+  color: #3e3d47;
+}
+
+.icon-after.icon-green {
+  color: #34bf00;
+}
+
+.icon-after.icon-red {
+  color: #d13434;
+}
+
+.utility {
+  text-align: right;
+}
+
+.utility p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.utility p a {
+  color: #3377c5;
+  text-decoration: underline;
+}
+
+.utility p a:hover {
+  color: #3377c5;
+  text-decoration: underline;
+}
+
+.btn-container {
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+
+.btn-container .btn {
+  width: 100%;
+}
+
+.error-block {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 0.8125rem;
+  color: #f00;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -33px;
+  position: relative;
+  z-index: 2;
+  padding-right: 18px;
+  font-size: 20px;
+}
+
+#sighn {
+  position: relative;
+  top: 20px;
+}
+
+.fa-solid,
+.fa-eye .fa,
+.fa {
+  position: absolute;
+  top: 28%;
+  left: 90%;
+  right: 10%;
+  cursor: pointer;
+}

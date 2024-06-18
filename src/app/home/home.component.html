@@ -1,0 +1,91 @@
+<app-header></app-header>
+<div class="home-page">
+  <div class="book-div">
+    <button
+      (click)="openViewBookingDialog()"
+      class="btn btn-danger book-a-meal"
+    >
+      View-Booking
+    </button>
+
+    <button
+      *ngIf="showCancelButton"
+      (click)="openCancelBookingDialog()"
+      class="btn btn-danger book-a-meal"
+    >
+      Cancel-Booking
+    </button>
+
+    <button
+      *ngIf="showQrCodeButton"
+      (click)="openQrCodeDialog()"
+      class="btn btn-danger book-a-meal"
+    >
+      QR-Code
+    </button>
+  </div>
+  <div class="quickbook">
+    <button
+      (click)="openQuickBookingDialog()"
+      class="btn btn-danger book-a-meal"
+    >
+      Quick-Book
+    </button>
+    <button (click)="openAddBookingDialog()" class="btn btn-danger book-a-meal">
+      Book a Meal
+    </button>
+    <button (click)="openFeedbackDialog()" class="btn btn-danger book-a-meal">
+      Feedback
+    </button>
+  </div>
+  <div class="home-content">
+    <div class="home-left">
+      <mat-card class="demo-inline-calendar-card">
+        <mat-calendar
+          class="calander"
+          [(selected)]="selectedDate"
+          [dateFilter]="dateFilter"
+          (selectedChange)="onDateSelected($event)"
+        ></mat-calendar>
+      </mat-card>
+    </div>
+    <div class="home-right">
+      <div>
+        <div class="home-right">
+          <div class="meal-header">
+            <h2>Meal of the day</h2>
+          </div>
+          <div class="today-meal-wrapper" *ngIf="selectedDate">
+            <div class="today-meal-block">
+              <div class="today-meal-col">
+                <div class="head">
+                  <h4>Lunch</h4>
+                </div>
+
+                <ul class="today-meal">
+                  <li *ngFor="let item of currentMenu.lunch">{{ item }}</li>
+                </ul>
+              </div>
+              <div class="today-meal-col">
+                <div class="head">
+                  <h4>Dinner</h4>
+                </div>
+                <ul class="today-meal">
+                  <li *ngFor="let item of currentMenu.dinner">{{ item }}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <div class="couponDIV">
+    <div *ngIf="showQrCodeComponent">
+      <!-- QR Code component will be displayed here -->
+      <app-coupon></app-coupon>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

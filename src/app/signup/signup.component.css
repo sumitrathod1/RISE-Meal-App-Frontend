@@ -1,0 +1,125 @@
+.back {
+  width: 100%;
+  height: 100%;
+  background-image: url("./../../assets/psychedelic-paper-shapes-with-copy-space.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  height: 100%;
+  padding: 40px;
+  position: absolute;
+  border: none;
+  background-color: #f3d9d9;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  box-shadow: rgb(0, 0, 3);
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  /* overflow: auto; */
+  box-sizing: border-box;
+}
+
+.L_account {
+  margin: 20px;
+}
+
+.back {
+  background-color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 500px;
+}
+
+.text-center {
+  text-align: center;
+  padding: 1px;
+}
+
+.logo-wrapper {
+  top: 10px;
+  margin-bottom: 5px;
+}
+
+.logo-wrapper img {
+  width: 80px;
+  height: auto;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+.mat-error {
+  font-size: 14px;
+  color: red;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.L_account {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.L_account a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.L_account a:hover {
+  text-decoration: underline;
+}
+
+.mb-3 {
+  margin-right: 10px;
+  display: flex;
+}
+
+/* #pas {
+  position: relative;
+  display: flex;
+} */
+
+.Meal {
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+.fa-solid,
+.fa-eye .fa,
+.fa {
+  position: absolute;
+  top: 40%;
+  left: 95%;
+  right: 10%;
+  cursor: pointer;
+}
+
+.fa-solid,
+.fa-eye .fa,
+.fa {
+  position: absolute;
+  top: 28%;
+  left: 90%;
+  right: 10%;
+  cursor: pointer;
+}

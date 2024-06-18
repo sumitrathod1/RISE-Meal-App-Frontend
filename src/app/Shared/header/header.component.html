@@ -1,0 +1,30 @@
+<div class="toolbar" role="banner">
+  <a
+    (click)="openSidebar()"
+    class="list-items"
+    data-toggle="modal"
+    data-target="#sidemenu"
+    aria-label="side menu"
+    ><i class="fa fa-bars" aria-hidden="true"></i
+  ></a>
+  <a (click)="navigateToHome()">
+    <img width="55" alt="Rise Logo" src="./../../../assets/logo-white.svg" />
+  </a>
+  <span class="title" (click)="navigateToHome()">Meal Facility</span>
+  <ul class="social">
+    <span class="name">Hii, {{ fullName }}!</span>
+    <li class="notification" (click)="openNotification()">
+      <a aria-label="Notification" class="list-items">
+        <i class="fa-sharp fa-regular fa-bell"></i>
+        <span *ngIf="NotificationCount > 0" class="notification-count">
+          {{ NotificationCount }}</span
+        >
+      </a>
+    </li>
+    <li class="logout" (click)="logout()">
+      <a aria-label="Logout" class="list-items">
+        <i class="fa fa-sign-out-alt"></i> Logout
+      </a>
+    </li>
+  </ul>
+</div>
